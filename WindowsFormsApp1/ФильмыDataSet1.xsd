@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ФильмыDataSet1" targetNamespace="http://tempuri.org/ФильмыDataSet1.xsd" xmlns:mstns="http://tempuri.org/ФильмыDataSet1.xsd" xmlns="http://tempuri.org/ФильмыDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ФильмыConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ФильмыConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.ФильмыConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Общий отчетTableAdapter" GeneratorDataComponentClassName="Общий_отчетTableAdapter" Name="Общий отчет" UserDataComponentName="Общий отчетTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ФильмыConnectionString (Settings)" DbObjectName="Фильмы.dbo.[Общий отчет]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Фамилия, Имя, Отчество, Название_Носителя, Год_записи, Год_съемки, Название_жанра, Год_использования, Название_фильма, Продолжительность, Память, Expr1, Expr2 FROM dbo.[Общий отчет]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Название_Носителя" DataSetColumn="Название_Носителя" />
+              <Mapping SourceColumn="Год_записи" DataSetColumn="Год_записи" />
+              <Mapping SourceColumn="Год_съемки" DataSetColumn="Год_съемки" />
+              <Mapping SourceColumn="Название_жанра" DataSetColumn="Название_жанра" />
+              <Mapping SourceColumn="Год_использования" DataSetColumn="Год_использования" />
+              <Mapping SourceColumn="Название_фильма" DataSetColumn="Название_фильма" />
+              <Mapping SourceColumn="Продолжительность" DataSetColumn="Продолжительность" />
+              <Mapping SourceColumn="Память" DataSetColumn="Память" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ФильмыDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ФильмыDataSet1" msprop:Generator_UserDSName="ФильмыDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Общий_x0020_отчет" msprop:Generator_TableClassName="Общий_отчетDataTable" msprop:Generator_TableVarName="tableОбщий_отчет" msprop:Generator_TablePropName="Общий_отчет" msprop:Generator_RowDeletingName="Общий_отчетRowDeleting" msprop:Generator_RowChangingName="Общий_отчетRowChanging" msprop:Generator_RowEvHandlerName="Общий_отчетRowChangeEventHandler" msprop:Generator_RowDeletedName="Общий_отчетRowDeleted" msprop:Generator_UserTableName="Общий отчет" msprop:Generator_RowChangedName="Общий_отчетRowChanged" msprop:Generator_RowEvArgName="Общий_отчетRowChangeEvent" msprop:Generator_RowClassName="Общий_отчетRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_UserColumnName="Отчество">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_Носителя" msprop:Generator_ColumnVarNameInTable="columnНазвание_Носителя" msprop:Generator_ColumnPropNameInRow="Название_Носителя" msprop:Generator_ColumnPropNameInTable="Название_НосителяColumn" msprop:Generator_UserColumnName="Название_Носителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Год_записи" msprop:Generator_ColumnVarNameInTable="columnГод_записи" msprop:Generator_ColumnPropNameInRow="Год_записи" msprop:Generator_ColumnPropNameInTable="Год_записиColumn" msprop:Generator_UserColumnName="Год_записи" type="xs:int" />
+              <xs:element name="Год_съемки" msprop:Generator_ColumnVarNameInTable="columnГод_съемки" msprop:Generator_ColumnPropNameInRow="Год_съемки" msprop:Generator_ColumnPropNameInTable="Год_съемкиColumn" msprop:Generator_UserColumnName="Год_съемки" type="xs:int" />
+              <xs:element name="Название_жанра" msprop:Generator_ColumnVarNameInTable="columnНазвание_жанра" msprop:Generator_ColumnPropNameInRow="Название_жанра" msprop:Generator_ColumnPropNameInTable="Название_жанраColumn" msprop:Generator_UserColumnName="Название_жанра">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Год_использования" msprop:Generator_ColumnVarNameInTable="columnГод_использования" msprop:Generator_ColumnPropNameInRow="Год_использования" msprop:Generator_ColumnPropNameInTable="Год_использованияColumn" msprop:Generator_UserColumnName="Год_использования" type="xs:int" />
+              <xs:element name="Название_фильма" msprop:Generator_ColumnVarNameInTable="columnНазвание_фильма" msprop:Generator_ColumnPropNameInRow="Название_фильма" msprop:Generator_ColumnPropNameInTable="Название_фильмаColumn" msprop:Generator_UserColumnName="Название_фильма">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Продолжительность" msprop:Generator_ColumnVarNameInTable="columnПродолжительность" msprop:Generator_ColumnPropNameInRow="Продолжительность" msprop:Generator_ColumnPropNameInTable="ПродолжительностьColumn" msprop:Generator_UserColumnName="Продолжительность" type="xs:duration" />
+              <xs:element name="Память" msprop:Generator_ColumnVarNameInTable="columnПамять" msprop:Generator_ColumnPropNameInRow="Память" msprop:Generator_ColumnPropNameInTable="ПамятьColumn" msprop:Generator_UserColumnName="Память" type="xs:int" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
